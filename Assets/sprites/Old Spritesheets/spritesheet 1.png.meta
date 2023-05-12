@@ -832,7 +832,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spritesheet 1_32: 1120146881
+      spritesheet 1_29: 360598517
       spritesheet 1_26: -361527364
       spritesheet 1_11: 980639633
       spritesheet 1_9: 1842619171
@@ -852,17 +852,17 @@ TextureImporter:
       spritesheet 1_21: 425354200
       spritesheet 1_13: 667505326
       spritesheet 1_23: 690156448
+      spritesheet 1_17: -1674973910
       spritesheet 1_3: -953117826
       spritesheet 1_7: -1565155406
-      spritesheet 1_10: -1900961829
       spritesheet 1_4: 1969084919
-      spritesheet 1_25: -1559353764
-      spritesheet 1_16: -517724985
+      spritesheet 1_32: 1120146881
+      spritesheet 1_10: -1900961829
       spritesheet 1_2: 1114900971
+      spritesheet 1_25: -1559353764
       spritesheet 1_24: 684523787
       spritesheet 1_6: 1275214145
-      spritesheet 1_29: 360598517
-      spritesheet 1_17: -1674973910
+      spritesheet 1_16: -517724985
       spritesheet 1_8: -1649007708
       spritesheet 1_28: 928619694
   spritePackingTag: 
