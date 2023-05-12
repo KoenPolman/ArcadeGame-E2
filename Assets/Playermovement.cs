@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Playermovement : MonoBehaviour
 {
-    float horizontalMove = 0;
     float playerposition = 0;
-    [SerializeField] float moveSpeed = 1;
     [SerializeField] private Rigidbody2D rb;
     void Start()
     {
