@@ -7,7 +7,7 @@ public class ButtonScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(0); // SampleScene Scene gets loaded (Game)
+        SceneManager.LoadScene(1); // SampleScene Scene gets loaded (Game)
     }
 
     //public void Restart()
