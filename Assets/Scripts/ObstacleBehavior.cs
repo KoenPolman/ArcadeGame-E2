@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridBehavior : MonoBehaviour
+public class ObstacleBehavior : MonoBehaviour
 {
     [SerializeField] private float velocity = 10;
-    [SerializeField] private float expirationDate = 1500;
+    [SerializeField] private float expirationDate = 150;
     [SerializeField] private Rigidbody2D rb;
     private float lifeSpan = 0;
-    void Start()
+    private void Start()
     {
         rb.AddForce(new Vector3(0, (-1 * velocity), 0));
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(lifeSpan > expirationDate)
+        if (lifeSpan > expirationDate)
         {
             Destroy(gameObject);
         }
