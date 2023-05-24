@@ -3,7 +3,14 @@ guid: 1f1f5b4dcd888fd4d8c37a34dff6f47e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Dumpster: {fileID: 4611382796325966966, guid: 045ef398b088bb042a188579c78ee526, type: 3}
+  - FuelCan: {fileID: 9121551730125248419, guid: 48da4483202d54d4a95215fc8da99f1e, type: 3}
+  - Bottle: {fileID: 328363702768275724, guid: 070a92381ce3e2747a7404ab3de7c5ac, type: 3}
+  - PizzaAndCan: {fileID: 4935947706670931268, guid: d7f4025405c982a48b7da9cda5af6de1, type: 3}
+  - Stump: {fileID: 3606712009429043016, guid: e29aa837fe08fd243878a3505351af4f, type: 3}
+  - Patoo1: {fileID: 1800585393089584448, guid: b5aee84f69b0e5e49bc6c5808fdc6b8b, type: 3}
+  - Patoo2: {fileID: 6882769003160026824, guid: b55c1c848a1df2b49ab9c9cb61fac18b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
