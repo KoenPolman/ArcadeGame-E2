@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
@@ -24,7 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
         float num = Random.Range(1, maxSpaceBetweenObstacles);
         if (num <= timeBetweenObstacles)
         {
-            float obstaclePicker = Random.Range(1, 8);
+            float obstaclePicker = Random.Range(1, 9);
             switch (obstaclePicker)
             {
                 case 1:
@@ -54,6 +55,10 @@ public class ObstacleSpawner : MonoBehaviour
                 case 7:
                     GameObject obstaclePotion = Instantiate(Potion);
                     ObstaclePlacer(obstaclePotion);
+                    break;
+                case 8:
+                    GameObject newClock = Instantiate(Clock);
+                    ObstaclePlacer(newClock);
                     break;
             }
             timeBetweenObstacles = -50;
