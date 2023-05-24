@@ -8,15 +8,13 @@ public class GridBehavior : MonoBehaviour
     [SerializeField] private float expirationDate = 1500;
     [SerializeField] private Rigidbody2D rb;
     private float lifeSpan = 0;
-    void Start()
+    private void Start()
     {
         rb.AddForce(new Vector3(0, (-1 * velocity), 0));
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(lifeSpan > expirationDate)
+        if (lifeSpan > expirationDate)
         {
             Destroy(gameObject);
         }

@@ -25,52 +25,38 @@ public class ObstacleSpawner : MonoBehaviour
         float num = Random.Range(1, maxSpaceBetweenObstacles);
         if (num <= timeBetweenObstacles)
         {
-            float obstaclePicker = Random.Range(1, 9);
+            float obstaclePicker = Random.Range(1, 7);
+            float positionPicker = Random.Range(-2, 3);
+            positionPicker = +-0.5625f;
             switch (obstaclePicker)
             {
                 case 1:
-                    GameObject obstacleDumpster = Instantiate(Dumpster);
-                    ObstaclePlacer(obstacleDumpster);
+                    GameObject obstacleDumpster = Instantiate(Dumpster, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 2:
-                    GameObject obstacleFuelCan = Instantiate(FuelCan);
-                    ObstaclePlacer(obstacleFuelCan);
+                    GameObject obstacleFuelCan = Instantiate(FuelCan, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 3:
-                    GameObject obstacleBottle = Instantiate(Bottle);
-                    ObstaclePlacer(obstacleBottle);
+                    GameObject obstacleBottle = Instantiate(Bottle, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 4:
-                    GameObject obstaclePizzaAndCan = Instantiate(PizzaAndCan);
-                    ObstaclePlacer(obstaclePizzaAndCan);
+                    GameObject obstaclePizzaAndCan = Instantiate(PizzaAndCan, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 5:
-                    GameObject obstacleStump = Instantiate(Stump);
-                    ObstaclePlacer(obstacleStump);
+                    GameObject obstacleStump = Instantiate(Stump, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 6:
-                    GameObject obstacleClock = Instantiate(Clock);
-                    ObstaclePlacer(obstacleClock);
+                    GameObject obstacleClock = Instantiate(Clock, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
-                case 7:
-                    GameObject obstaclePotion = Instantiate(Potion);
-                    ObstaclePlacer(obstaclePotion);
-                    break;
-                case 8:
-                    GameObject newClock = Instantiate(Clock);
-                    ObstaclePlacer(newClock);
-                    break;
+                //case 7:
+                //    GameObject obstaclePotion = Instantiate(Potion);
+                //    ObstaclePlacer(obstaclePotion);
+                //    break;
             }
             timeBetweenObstacles = -50;
-            maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 10;
+            maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 5;
+            Debug.Log(maxSpaceBetweenObstacles);
         }
         timeBetweenObstacles++;
-        Debug.Log(timeBetweenObstacles);
-    }
-    private void ObstaclePlacer(GameObject placedGameObject)
-    {
-        float positionPicker = Random.Range(-2, 3);
-        positionPicker =+-0.5625f;
-        placedGameObject.transform.position = new Vector3(positionPicker, 10f, 0f);
     }
 }
