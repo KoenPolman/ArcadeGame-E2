@@ -10,9 +10,9 @@ public class ObstacleBehavior : MonoBehaviour
     private float lifeSpan = 0;
     private void Start()
     {
-        float positionPicker = Random.Range(-2, 3);
-        positionPicker = +-0.5625f;
-        rb.transform.position = new Vector3(positionPicker, 10f, 0f);
+        //float positionPicker = Random.Range(-2, 3);
+        //positionPicker = positionPicker - 0.5625f;
+        //rb.transform.position = new Vector3(positionPicker, 10f, 0f);
         rb.velocity = (new Vector3(0, (-1 * velocity), 0));
     }
     private void Update()

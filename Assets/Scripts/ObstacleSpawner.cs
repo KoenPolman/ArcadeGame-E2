@@ -17,17 +17,16 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] GameObject Potion = null;
 
     //timeBetweenObstacles telt langzaam op waarmee de kans om een obstakel te spawnen groter word met tijd
-    private float timeBetweenObstacles = -400;
+    private float timeBetweenObstacles = -100;
     //tijd waarna het gegarandeerd is dat er een obstacle word in gespawned
-    private float maxSpaceBetweenObstacles = 400;
+    private float maxSpaceBetweenObstacles = 800;
     private void FixedUpdate()
     {
         float num = Random.Range(1, maxSpaceBetweenObstacles);
         if (num <= timeBetweenObstacles)
         {
-            float obstaclePicker = Random.Range(1, 7);
+            float obstaclePicker = Random.Range(1, 8);
             float positionPicker = Random.Range(-2, 3);
-            positionPicker = +-0.5625f;
             switch (obstaclePicker)
             {
                 case 1:
@@ -48,14 +47,14 @@ public class ObstacleSpawner : MonoBehaviour
                 case 6:
                     GameObject obstacleClock = Instantiate(Clock, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
-                //case 7:
-                //    GameObject obstaclePotion = Instantiate(Potion);
-                //    ObstaclePlacer(obstaclePotion);
-                //    break;
+                case 7:
+                    GameObject obstaclePotion = Instantiate(Potion, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
+                    break;
             }
             timeBetweenObstacles = -50;
-            maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 5;
+            maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 10;
             Debug.Log(maxSpaceBetweenObstacles);
+            Debug.Log(positionPicker);
         }
         timeBetweenObstacles++;
     }
