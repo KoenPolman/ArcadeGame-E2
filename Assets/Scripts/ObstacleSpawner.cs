@@ -58,6 +58,7 @@ public class ObstacleSpawner : MonoBehaviour
                     break;
                 case 8:
                     GameObject newClock = Instantiate(Clock);
+                    ObstaclePlacer(newClock);
                     break;
             }
             timeBetweenObstacles = -50;
