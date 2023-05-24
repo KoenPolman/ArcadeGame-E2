@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
+    //dit zijn alle prefabs die door dit script in gespawnd worden
     [SerializeField] GameObject Dumpster = null; 
     [SerializeField] GameObject FuelCan = null; 
     [SerializeField] GameObject Bottle = null; 
@@ -15,7 +16,9 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] GameObject Clock = null; 
     [SerializeField] GameObject Potion = null;
 
+    //timeBetweenObstacles telt langzaam op waarmee de kans om een obstakel te spawnen groter word met tijd
     private float timeBetweenObstacles = -400;
+    //tijd waarna het gegarandeerd is dat er een obstacle word in gespawned
     private float maxSpaceBetweenObstacles = 400;
     private void FixedUpdate()
     {
@@ -26,25 +29,32 @@ public class ObstacleSpawner : MonoBehaviour
             switch (obstaclePicker)
             {
                 case 1:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstacleDumpster = Instantiate(Dumpster);
+                    ObstaclePlacer(obstacleDumpster);
                     break;
                 case 2:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstacleFuelCan = Instantiate(FuelCan);
+                    ObstaclePlacer(obstacleFuelCan);
                     break;
                 case 3:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstacleBottle = Instantiate(Bottle);
+                    ObstaclePlacer(obstacleBottle);
                     break;
                 case 4:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstaclePizzaAndCan = Instantiate(PizzaAndCan);
+                    ObstaclePlacer(obstaclePizzaAndCan);
                     break;
                 case 5:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstacleStump = Instantiate(Stump);
+                    ObstaclePlacer(obstacleStump);
                     break;
                 case 6:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstacleClock = Instantiate(Clock);
+                    ObstaclePlacer(obstacleClock);
                     break;
                 case 7:
-                    GameObject newObstacle = Instantiate(Dumpster);
+                    GameObject obstaclePotion = Instantiate(Potion);
+                    ObstaclePlacer(obstaclePotion);
                     break;
                 case 8:
                     GameObject newClock = Instantiate(Clock);
@@ -53,6 +63,12 @@ public class ObstacleSpawner : MonoBehaviour
             timeBetweenObstacles = -50;
             maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 10;
         }
-        lifeSpan++;
+        timeBetweenObstacles++;
+    }
+    private void ObstaclePlacer(GameObject placedGameObject)
+    {
+        float positionPicker = Random.Range(1, 6);
+        positionPicker =+-0.5625f;
+        placedGameObject.transform.position = new Vector3(positionPicker, 10f, 0f);
     }
 }
