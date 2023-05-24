@@ -7,19 +7,12 @@ public class ButtonScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(1); // SampleScene Scene gets loaded (Game)
+        SceneManager.LoadScene(3); // SampleScene Scene gets loaded (Game)
     }
-
-    //public void Restart()
-    //{
-    //    SceneManager.LoadScene(2); // MainMenu Scene gets loaded
-    //}
-
     public void InsertCoins()
     {
         SceneManager.LoadScene(0); // MainMenu Scene gets loaded
     }
-
     public void QuitGame()
     {
         Application.Quit();
