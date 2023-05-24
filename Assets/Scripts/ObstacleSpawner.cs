@@ -60,10 +60,11 @@ public class ObstacleSpawner : MonoBehaviour
             maxSpaceBetweenObstacles = maxSpaceBetweenObstacles - 10;
         }
         timeBetweenObstacles++;
+        Debug.Log(timeBetweenObstacles);
     }
     private void ObstaclePlacer(GameObject placedGameObject)
     {
-        float positionPicker = Random.Range(1, 6);
+        float positionPicker = Random.Range(-2, 3);
         positionPicker =+-0.5625f;
         placedGameObject.transform.position = new Vector3(positionPicker, 10f, 0f);
     }
