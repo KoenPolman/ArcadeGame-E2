@@ -327,7 +327,7 @@ MonoBehaviour:
   Patoo1: {fileID: 1800585393089584448, guid: b5aee84f69b0e5e49bc6c5808fdc6b8b, type: 3}
   Patoo2: {fileID: 6882769003160026824, guid: b55c1c848a1df2b49ab9c9cb61fac18b, type: 3}
   Clock: {fileID: 6951346608103586113, guid: d6d68e21b9cbbd4468d02533f6e3a65d, type: 3}
-  Potion: {fileID: 2514457754649689747, guid: 8bb89afe24d5d074d81d98cec0e62c8a, type: 3}
+  Potion: {fileID: 0}
 --- !u!114 &42290275
 MonoBehaviour:
   m_ObjectHideFlags: 0

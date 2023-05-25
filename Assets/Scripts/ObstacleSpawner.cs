@@ -19,7 +19,7 @@ public class ObstacleSpawner : MonoBehaviour
     //timeBetweenObstacles telt langzaam op waarmee de kans om een obstakel te spawnen groter word met tijd
     private float timeBetweenObstacles = -100;
     //tijd waarna het gegarandeerd is dat er een obstacle word in gespawned
-    private float maxSpaceBetweenObstacles = 100;
+    private float maxSpaceBetweenObstacles = 800;
     private void FixedUpdate()
     {
         float num = Random.Range(1, maxSpaceBetweenObstacles);
