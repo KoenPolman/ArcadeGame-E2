@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2557407320880257796}
   - component: {fileID: 6216769392518644290}
   - component: {fileID: 6145200885915895603}
+  - component: {fileID: 9078764098928018928}
   m_Layer: 0
   m_Name: ObstacleDumpster
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,3 +150,15 @@ MonoBehaviour:
   velocity: 5
   expirationDate: 150
   rb: {fileID: 2557407320880257796}
+--- !u!114 &9078764098928018928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611382796325966966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc9d393bd64dd9499021156e0836b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

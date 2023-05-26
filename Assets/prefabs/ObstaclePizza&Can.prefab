@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6427343824767600926}
   - component: {fileID: 3168024508088324993}
   - component: {fileID: 1815101932466366870}
+  - component: {fileID: 3689184605959615457}
   m_Layer: 0
   m_Name: ObstaclePizza&Can
-  m_TagString: Untagged
+  m_TagString: obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,3 +150,15 @@ MonoBehaviour:
   velocity: 5
   expirationDate: 150
   rb: {fileID: 6427343824767600926}
+--- !u!114 &3689184605959615457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935947706670931268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc9d393bd64dd9499021156e0836b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
