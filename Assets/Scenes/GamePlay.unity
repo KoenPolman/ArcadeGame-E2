@@ -191,7 +191,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.03889431, y: -0.0372684}
@@ -328,6 +328,7 @@ MonoBehaviour:
   Patoo2: {fileID: 6882769003160026824, guid: b55c1c848a1df2b49ab9c9cb61fac18b, type: 3}
   Clock: {fileID: 6951346608103586113, guid: d6d68e21b9cbbd4468d02533f6e3a65d, type: 3}
   Potion: {fileID: 0}
+  maxSpaceBetweenObstacles: 800
 --- !u!114 &42290275
 MonoBehaviour:
   m_ObjectHideFlags: 0
