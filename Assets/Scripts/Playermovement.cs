@@ -19,11 +19,11 @@ public class Playermovement : MonoBehaviour
     {
         if (Input.GetKeyDown("d"))
         {
-            playerposition++;
+            playerposition++; // zorgt ervoor dat als je op D klikt je een stap naar rechts doet
         }
         else if (Input.GetKeyDown("a"))
         {
-            playerposition--;
+            playerposition--; // zorgt ervoor dat als je op A klikt je een stap naar links doet
         }
         if (playerposition < -2)
         {

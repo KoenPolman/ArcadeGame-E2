@@ -20,7 +20,7 @@ public class Scoring : MonoBehaviour
         PlayerPrefs.SetFloat("score: ", score);
         //score = PlayerPrefs.GetFloat("score: ");
     }
-    public void Update()
+    public void Update() // zorgt ervoor dat de scores worden geupdate om een bepaalde tijd
     {
         scoreText.text = score.ToString();
         //highText.text = highScore.ToString();
