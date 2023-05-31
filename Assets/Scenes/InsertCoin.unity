@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 614835223}
   - component: {fileID: 614835222}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: antwoord 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 749363826}
   - component: {fileID: 749363825}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: antwoord 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 1395012694}
   - component: {fileID: 1395012693}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: som
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 1438555049}
   - component: {fileID: 1438555048}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: antwoord 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,7 +1254,7 @@ GameObject:
   - component: {fileID: 1816411467}
   - component: {fileID: 1816411466}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: hoeveelheid coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1359,6 @@ MonoBehaviour:
   - {fileID: 1712979874}
   - {fileID: 713651124}
   - {fileID: 1816411466}
-  buttons: []
 --- !u!4 &1959334852
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,7 +1387,7 @@ GameObject:
   - component: {fileID: 1976720878}
   - component: {fileID: 1976720877}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: terug naar menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1522,7 +1521,7 @@ GameObject:
   - component: {fileID: 2028802682}
   - component: {fileID: 2028802681}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: antwoord 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

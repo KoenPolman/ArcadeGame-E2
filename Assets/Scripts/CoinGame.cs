@@ -10,12 +10,6 @@ using UnityEngine.UI;
 
 public class CoinGame : MonoBehaviour
 {
-
-   
-    
-
-
-
     public Text text;
     public Text answers;
     [SerializeField] Text[] answersArr;
@@ -26,7 +20,7 @@ public class CoinGame : MonoBehaviour
     int correct;
     int coins;
 
-    void UpdateAnswers()
+    void UpdateAnswers() // deze method zorgt ervoor dat de som en antwoorden op de buttons komen te staan
     {
         answersArr[0].text = wrong1.ToString();
         answersArr[1].text = wrong2.ToString();
@@ -35,16 +29,11 @@ public class CoinGame : MonoBehaviour
         answersArr[4].text = coins.ToString();
 
     }
-    [SerializeField] Button[] buttons;
-
-
     void Start()
     {
-
         Sums();
-
     }
-    void Sums()
+    void Sums() // genereert een plus of min som plus het goede en drie foute antwoorden
     {
 
         string right;
@@ -56,22 +45,13 @@ public class CoinGame : MonoBehaviour
         int num1 = GetNum();
         int num2 = GetNum();
 
-        Input.GetMouseButton(1);
-
-
-
-
         int opp = Random.Range(1, 3);
-
 
         if (opp == 1)
         {
             if (num1 > num2)
             {
                 sum = num1.ToString() + "-" + num2.ToString();
-
-
-
 
                 correct = num1 - num2;
 
@@ -90,8 +70,6 @@ public class CoinGame : MonoBehaviour
                     wrong3 = notCorrect1 - GetNum();
                     wrong = wrong3.ToString();
 
-
-
                 }
                 else if (notCorrect2 > GetNum())
                 {
@@ -105,8 +83,6 @@ public class CoinGame : MonoBehaviour
 
                     wrong3 = notCorrect2 - GetNum();
                     wrong = wrong3.ToString();
-
-
                 }
 
             }
@@ -142,9 +118,7 @@ public class CoinGame : MonoBehaviour
 
                     wrong3 = notCorrect2 - GetNum();
                     wrong = wrong3.ToString();
-
                 }
-
             }
         }
         else if (opp == 2)
@@ -161,36 +135,20 @@ public class CoinGame : MonoBehaviour
 
             wrong3 = notCorrect1 + GetNum();
             wrong = wrong3.ToString();
-
-
         }
         text.text = sum;
         UpdateAnswers();
     }
-
-    int GetNum()
+    int GetNum()// genereert de nummers voor de sommen
     {
         int num = Random.Range(100, 1000);
         return num;
-
-
-
     }
-   
-       
-        public void ButtonClicked()
+       public void ButtonClicked() // deze method zorgt ervoor dat als je op de knop met het juiste antwoord klikt je een nieuwe som krijgt en een munt erbij
         {
       
         coins++;
        
         Sums();
         }
-    
-
-
-
-
-
 }
-    
-
