@@ -35,19 +35,19 @@ public class Playermovement : MonoBehaviour
         }
         transform.position = new Vector3(playerposition,-4,0);
     }
-    void FixedUpdate()
-    {
-        timer += Time.deltaTime;
-        if (timer > 3)
-        {
-            PlayerPrefs.SetFloat("score: ", score);
-            score += 1;
-            timer = 0;
-            if (score > highScore)
-            {
-                highScore = score;
-                PlayerPrefs.SetFloat("highScore: ", MathF.Ceiling(highScore));
-            }
-        }
-    }
+    //void FixedUpdate()
+    //{
+    //    timer += Time.deltaTime;
+    //    if (timer > 3)
+    //    {
+    //        PlayerPrefs.SetFloat("score: ", score);
+    //        score += 1;
+    //        timer = 0;
+    //        if (score > highScore)
+    //        {
+    //            highScore = score;
+    //            PlayerPrefs.SetFloat("highScore: ", MathF.Ceiling(highScore));
+    //        }
+    //    }
+    //}
 }

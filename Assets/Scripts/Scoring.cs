@@ -9,21 +9,21 @@ using UnityEngine.SocialPlatforms.Impl;
 public class Scoring : MonoBehaviour
 {
     public Text scoreText;
-    public Text highText;
+    //public Text highText;
     public float timer;
     public float score;
     public float highScore;
     void Start()
     {
         score = 0;
-        highScore = PlayerPrefs.GetFloat("highScore: ");
+        //highScore = PlayerPrefs.GetFloat("highScore: ");
         PlayerPrefs.SetFloat("score: ", score);
-        score = PlayerPrefs.GetFloat("score: ");
+        //score = PlayerPrefs.GetFloat("score: ");
     }
     public void Update()
     {
         scoreText.text = score.ToString();
-        highText.text = highScore.ToString();
+        //highText.text = highScore.ToString();
         timer += Time.deltaTime;
         if (timer > 3)
         {

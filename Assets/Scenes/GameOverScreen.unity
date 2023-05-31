@@ -651,14 +651,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 652783201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c287fea1c9bb4949b3b6368268f4b07, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d4cab42eea79e246b0bda22e2bd7ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScoreText: {fileID: 652783203}
   scoreText: {fileID: 968628765}
-  highText: {fileID: 652783203}
-  timer: 0
-  score: 0
-  highScore: 0
 --- !u!1 &687421343
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,14 +898,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 968628763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c287fea1c9bb4949b3b6368268f4b07, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d4cab42eea79e246b0bda22e2bd7ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScoreText: {fileID: 652783203}
   scoreText: {fileID: 968628765}
-  highText: {fileID: 652783203}
-  timer: 0
-  score: 0
-  highScore: 0
 --- !u!1 &973979315
 GameObject:
   m_ObjectHideFlags: 0
