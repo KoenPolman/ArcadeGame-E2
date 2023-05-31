@@ -27,9 +27,6 @@ public class CoinGame : MonoBehaviour
         answersArr[2].text = wrong3.ToString();
         answersArr[3].text = correct.ToString();
         answersArr[4].text = coins.ToString();
-
-        PlayerPrefs.SetInt("Coins", coins);
-        PlayerPrefs.Save();
     }
     void Start()
     {
@@ -150,7 +147,8 @@ public class CoinGame : MonoBehaviour
         {
       
         coins++;
-       
+        PlayerPrefs.SetInt("Coins", coins);
+        PlayerPrefs.Save();
         Sums();
         }
 }
