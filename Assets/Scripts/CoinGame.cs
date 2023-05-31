@@ -24,6 +24,7 @@ public class CoinGame : MonoBehaviour
     int wrong2;
     int wrong3;
     int correct;
+    int coins;
 
     void UpdateAnswers()
     {
@@ -31,6 +32,7 @@ public class CoinGame : MonoBehaviour
         answersArr[1].text = wrong2.ToString();
         answersArr[2].text = wrong3.ToString();
         answersArr[3].text = correct.ToString();
+        answersArr[4].text = coins.ToString();
 
     }
     [SerializeField] Button[] buttons;
@@ -178,8 +180,8 @@ public class CoinGame : MonoBehaviour
        
         public void ButtonClicked()
         {
-        int coin = 0;
-        coin++;
+      
+        coins++;
        
         Sums();
         }
