@@ -1250,7 +1250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1959334852}
-  - component: {fileID: 1959334851}
+  - component: {fileID: 1959334853}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -1258,26 +1258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1959334851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959334850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f109ada1e6cd7ee4ab2ef8ec2490de9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1395012693}
-  answers: {fileID: 0}
-  answersArr:
-  - {fileID: 233352161}
-  - {fileID: 877360706}
-  - {fileID: 1712979874}
-  - {fileID: 713651124}
-  buttons: []
 --- !u!4 &1959334852
 Transform:
   m_ObjectHideFlags: 0
@@ -1293,6 +1273,30 @@ Transform:
   m_Father: {fileID: 1051833533}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959334853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959334850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fd037f2539f6b41b179c5cbc87b37e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1395012693}
+  answers: {fileID: 0}
+  answersArr:
+  - {fileID: 233352161}
+  - {fileID: 877360706}
+  - {fileID: 1712979874}
+  - {fileID: 713651124}
+  buttons:
+  - {fileID: 749363825}
+  - {fileID: 614835222}
+  - {fileID: 1438555048}
+  - {fileID: 2028802681}
 --- !u!1 &1976720875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1959334851}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CoinGame, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 1
