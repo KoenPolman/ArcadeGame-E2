@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 652783202}
   - component: {fileID: 652783204}
   - component: {fileID: 652783203}
+  - component: {fileID: 652783205}
   m_Layer: 5
   m_Name: HighScoreText
   m_TagString: Untagged
@@ -641,6 +642,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652783201}
   m_CullTransparentMesh: 1
+--- !u!114 &652783205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652783201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c287fea1c9bb4949b3b6368268f4b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 968628765}
+  highText: {fileID: 652783203}
+  timer: 0
+  score: 0
+  highScore: 0
 --- !u!1 &687421343
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +822,7 @@ GameObject:
   - component: {fileID: 968628764}
   - component: {fileID: 968628766}
   - component: {fileID: 968628765}
+  - component: {fileID: 968628767}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -828,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.208102, y: 11.151998}
+  m_AnchoredPosition: {x: 9.2077, y: 11.152}
   m_SizeDelta: {x: 61.4473, y: 17.7518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968628765
@@ -873,6 +892,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968628763}
   m_CullTransparentMesh: 1
+--- !u!114 &968628767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968628763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c287fea1c9bb4949b3b6368268f4b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 968628765}
+  highText: {fileID: 652783203}
+  timer: 0
+  score: 0
+  highScore: 0
 --- !u!1 &973979315
 GameObject:
   m_ObjectHideFlags: 0
