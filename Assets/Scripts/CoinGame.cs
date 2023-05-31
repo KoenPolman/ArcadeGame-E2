@@ -18,7 +18,7 @@ public class CoinGame : MonoBehaviour
     int wrong2;
     int wrong3;
     int correct;
-    int coins;
+    public int coins;
 
     void UpdateAnswers() // deze method zorgt ervoor dat de som en antwoorden op de buttons komen te staan
     {
@@ -28,6 +28,8 @@ public class CoinGame : MonoBehaviour
         answersArr[3].text = correct.ToString();
         answersArr[4].text = coins.ToString();
 
+        PlayerPrefs.SetInt("Coins", coins);
+        PlayerPrefs.Save();
     }
     void Start()
     {
