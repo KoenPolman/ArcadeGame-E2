@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class GameOverScript : MonoBehaviour
 {
-    public Text highScoreText;
     public Text scoreText;
+    public Text highScoreText;
     float score;
     float highScore;
 
     public void Start()
     {
         score = PlayerPrefs.GetFloat("score: ", score);
-        scoreText.text = scoreText.ToString();
+        scoreText.text = score.ToString();
 
         highScore = PlayerPrefs.GetFloat("highScore: ", MathF.Ceiling(highScore));
         highScoreText.text = highScore.ToString();
