@@ -28,12 +28,12 @@ public class ButtonScript : MonoBehaviour
     }
     public void InsertCoins()
     {
-        SceneManager.LoadScene(0); // MainMenu Scene gets loaded
+        SceneManager.LoadScene(1); // MainMenu Scene gets loaded
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {

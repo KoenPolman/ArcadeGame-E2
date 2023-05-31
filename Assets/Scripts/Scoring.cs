@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class Scoring : MonoBehaviour
 {
