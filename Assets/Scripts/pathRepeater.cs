@@ -7,7 +7,7 @@ public class pathRepeater : MonoBehaviour
     [SerializeField] GameObject Grid = null;
     private float lifeSpan = 1;
     private float interval = 1250;
-    private void FixedUpdate()
+    private void FixedUpdate() // zorgt ervoor dat het pad zichzelf steeds herhaalt
     {
         if (lifeSpan % interval == 0)
         {

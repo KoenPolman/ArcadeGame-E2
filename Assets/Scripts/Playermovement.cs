@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Playermovement : MonoBehaviour
 {
+    public float timer;
+    public float score;
+    public float highScore;
     float playerposition = 0;
     [SerializeField] private Rigidbody2D rb;
     void Start()
@@ -14,11 +19,11 @@ public class Playermovement : MonoBehaviour
     {
         if (Input.GetKeyDown("d"))
         {
-            playerposition++;
+            playerposition++; // zorgt ervoor dat als je op D klikt je een stap naar rechts doet
         }
         else if (Input.GetKeyDown("a"))
         {
-            playerposition--;
+            playerposition--; // zorgt ervoor dat als je op A klikt je een stap naar links doet
         }
         if (playerposition < -2)
         {
@@ -30,4 +35,19 @@ public class Playermovement : MonoBehaviour
         }
         transform.position = new Vector3(playerposition,-4,0);
     }
+    //void FixedUpdate()
+    //{
+    //    timer += Time.deltaTime;
+    //    if (timer > 3)
+    //    {
+    //        PlayerPrefs.SetFloat("score: ", score);
+    //        score += 1;
+    //        timer = 0;
+    //        if (score > highScore)
+    //        {
+    //            highScore = score;
+    //            PlayerPrefs.SetFloat("highScore: ", MathF.Ceiling(highScore));
+    //        }
+    //    }
+    //}
 }
