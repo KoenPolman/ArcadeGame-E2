@@ -48,7 +48,7 @@ public class ObstacleSpawner : MonoBehaviour
                     GameObject obstacleClock = Instantiate(Clock, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
                 case 7:
-                    GameObject obstaclePotion = Instantiate(Potion, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
+                    GameObject obstaclepotion = Instantiate(Potion, new Vector3(positionPicker, 10f, 0f), Quaternion.identity);
                     break;
             }
             timeBetweenObstacles = -50;
